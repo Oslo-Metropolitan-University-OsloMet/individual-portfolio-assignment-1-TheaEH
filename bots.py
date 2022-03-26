@@ -1,34 +1,6 @@
 import random
 
 
-def alice(a):
-    b = random.choice(boring_things)
-    if a in boring_things:
-        return f"I, personally, think {a}ing sounds great! I\'ll join you once I\'m done {b}ing by myself!"
-    elif a in good_things:
-        if a == "relax":
-            b = "study"
-        return f"To be honest, I\'m not really good at {a}ing . I\'m much better at {b}ing so I\'ll leave it to Dora."
-    elif a in bad_things:
-        a = str(a).capitalize()
-        return f"{a}ing sounds scary... I\'d rather be at home, doing something productive."
-    else:
-        return f"I\'ve never tried {a}ing before. Maybe I should expand my horizons and give it a go?"
-
-
-def bob(a):
-    a2 = str(a).capitalize()    # Capitalized duplicate of the parameter, for grammatically correct replies
-    if a in good_things:
-        return f"{a2}ing sounds fun! But maybe we could do some boring stuff first to include Alice?"
-    elif a in bad_things:
-        return f"{a2}ing sounds kinda bad, but if Chuck\'s doing it I might reconsider. No man left behind!"
-    elif a in boring_things:
-        return f"I\'m down for a change of pace. It's important to {a} every once in a while!"
-    else:
-        b = random.choice(actions)
-        return f"That\'s a no from me. {a2}ing isn't how I roll. You\'ll find me {b}ing if you need me!"
-
-
 def dora(a):
     if a in bad_things:
         if a == "graffiti":
@@ -66,6 +38,34 @@ def chuck(a):
                f"\n       Why would anyone want to {a} when you can do something fun instead xD"
     else:
         return f"Not too sure about {a}ing. Unless it involves doing something bad, this guy ain\'t interested"
+
+
+def alice(a):
+    b = random.choice(boring_things)
+    if a in boring_things:
+        return f"I, personally, think {a}ing sounds great! I\'ll join you once I\'m done {b}ing by myself!"
+    elif a in good_things:
+        if a == "relax":
+            b = "study"
+        return f"To be honest, I\'m not really good at {a}ing . I\'m much better at {b}ing so I\'ll leave it to Dora."
+    elif a in bad_things:
+        a = str(a).capitalize()
+        return f"{a}ing sounds scary... I\'d rather be at home, doing something productive."
+    else:
+        return f"I\'ve never tried {a}ing before. Maybe I should expand my horizons and give it a go?"
+
+
+def bob(a):
+    a2 = str(a).capitalize()    # Capitalized duplicate of the parameter, for grammatically correct replies
+    if a in good_things:
+        return f"{a2}ing sounds fun! But maybe we could do some boring stuff first to include Alice?"
+    elif a in bad_things:
+        return f"{a2}ing sounds kinda bad, but if Chuck\'s doing it I might reconsider. No man left behind!"
+    elif a in boring_things:
+        return f"I\'m down for a change of pace. It's important to {a} every once in a while!"
+    else:
+        b = random.choice(actions)
+        return f"That\'s a no from me. {a2}ing isn't how I roll. You\'ll find me {b}ing if you need me!"
 
 
 def user(a):
