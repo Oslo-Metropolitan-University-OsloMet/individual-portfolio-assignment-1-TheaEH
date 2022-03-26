@@ -15,7 +15,7 @@ IP_address = str(sys.argv[1])       # Takes the first argument from command prom
 
 Port = int(sys.argv[2])             # Takes the second argument from command prompt as port number
 
-Bot = str(sys.argv[3]).lower()      # Takes the third argument from command prompt as port number
+Bot = str(sys.argv[3]).lower()      # Takes the third argument from command prompt as bot
 
 clientSocket.connect((IP_address, Port))    # Connects to the TCP socket
 
