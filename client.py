@@ -44,7 +44,7 @@ def receive():
                 else:                       # The message is empty, which means the connection has been closed
                     print("\nDisconnecting from the server...")
                     break
-        except socket.error as e:           # This exception occurs if the socket is closed by the host
+        except socket.error as e:           # This exception occurs if we attempt to reach a closed socket
             print("\n(You have been disconnected from the server!)")
             break
 
