@@ -2,7 +2,7 @@ import sys          # to access command line arguments
 import socket       # to use sockets in our program
 import bots         # to use the bot commands from another .py file
 import threading    # to use threads
-
+# You should have 'import time' , or 'create from time inport sleep'. 
 # Creates a socket using TCP/IP protocol
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
